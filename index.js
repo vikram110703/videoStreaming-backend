@@ -10,7 +10,7 @@ const io = new Server(8000, {
             {
                 "src": "/socket.io",
                 "headers": {
-                    "Access-Control-Allow-Origin": `${process.env.FRONTEND_URL}`
+                    "Access-Control-Allow-Origin": [`${process.env.FRONTEND_URL}`,"http://localhost:3000"]
                 }
             }
         ]
